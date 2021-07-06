@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(57, 196, 196);
+}
+
+h2 {
+  font-size: 5rem;
+}
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+.form-wrapper span {
+  font-size: 4rem;
+  color: rgb(168, 4, 4);
+}
+.form-wrapper label {
+  display: block;
+}
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  outline-color: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.form-wrapper .button {
+  padding: 1rem;
+  width: 100%;
+  background: rgb(151, 15, 15);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.form-wrapper h2 {
+  margin-bottom: 5rem;
+}
+.message {
+  display: block;
+  margin: 3rem 0rem;
+  padding: 0.3rem;
+  box-shadow: black;
+  color: white;
+  border: none;
+}
