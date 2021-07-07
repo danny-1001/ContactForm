@@ -1,10 +1,12 @@
-#Dependancies to install
+#Dependancies to install:
+
 npm install emailjs-com --save
 npm install sweetalert2
 npm install node-sass --save
 
 
 #After installing,
+
 import emailjs by typing the following:
 
 import emailjs from 'emailjs-com';
