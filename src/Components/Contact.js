@@ -7,7 +7,7 @@ export default function ContactUs() {
 
     emailjs
       .sendForm(
-        "service_wdr2lom",
+        "service_irbryfc",
         "template_6k2e67r",
         e.target,
         "user_eQZPwddNgJzRQsHtkIH2d"
@@ -24,32 +24,34 @@ export default function ContactUs() {
   }
 
   return (
-    <form className="contact" id="contact">
-      <div className="form-wrapper flex">
+    <section className="contact" id="contact">
+      <div className="form-wrapper">
         <h2>
           Get in <br />
           <span>touch</span>
         </h2>
-        <form onSubmit={sendEmail}>
-          <div className="name-js">
+        <form onSubmit={sendEmail} className="card">
+          <div className="nameJs">
             <input
               id="name"
               type="text"
               className="form-control"
               placeholder="Name"
               name="name"
+              required
             />
           </div>
-          <div className="email-js">
+          <div className="emailJs">
             <input
               id="email"
               type="email"
               className="form-control"
               placeholder="Email "
               name="email"
+              required
             />
           </div>
-          <div className="message-js">
+          <div className="messageJs">
             <input
               type="text"
               className="form-control"
@@ -58,7 +60,7 @@ export default function ContactUs() {
             />
           </div>
 
-          <div className="submit-btn">
+          <div className="submitBtn">
             <button
               id="submit"
               type="submit"
@@ -73,6 +75,6 @@ export default function ContactUs() {
           </div>
         </form>
       </div>
-    </form>
+    </section>
   );
 }

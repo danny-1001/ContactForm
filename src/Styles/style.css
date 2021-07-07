@@ -10,20 +10,33 @@ html {
 }
 
 body {
-  background-color: #39c4c4;
+  background: -webkit-gradient(linear, left top, right top, from(#fc466b), to(#3f5efb));
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
 }
 
 h2 {
   font-size: 5rem;
 }
 
+.form-wrapper {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 40rem;
+          flex: 3 1 40rem;
+  background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  padding: 5rem;
+  margin: 4rem 6rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0 3rem 0.2rem;
+          box-shadow: 0 0 3rem 0.2rem;
+}
+
 .contact {
   min-height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -37,15 +50,9 @@ h2 {
           align-items: center;
 }
 
-.form-wrapper {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 1 40rem;
-          flex: 3 1 40rem;
-}
-
 .form-wrapper span {
   font-size: 4rem;
-  color: #a80404;
+  color: #c51d7f;
 }
 
 .form-wrapper label {
@@ -56,8 +63,14 @@ h2 {
   display: block;
   margin: 3rem 0rem;
   width: 100%;
-  background: white;
-  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  color: #fdfdfd;
   border: none;
   border-radius: 1rem;
   padding: 1rem;
@@ -73,7 +86,8 @@ select:focus {
 .form-wrapper .button {
   padding: 1rem;
   width: 100%;
-  background: #970f0f;
+  font-size: 2rem;
+  background: #3f5efb;
   color: white;
   border: none;
   border-radius: 1rem;
@@ -81,7 +95,7 @@ select:focus {
 }
 
 .form-wrapper h2 {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .message {
@@ -91,6 +105,12 @@ select:focus {
   -webkit-box-shadow: black;
           box-shadow: black;
   color: white;
+  border: none;
+}
+
+.swal-button {
+  border-radius: 0.5rem;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
   border: none;
 }
 /*# sourceMappingURL=style.css.map */

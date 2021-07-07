@@ -9,15 +9,23 @@ html {
 }
 
 body {
-  background-color: rgb(57, 196, 196);
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
 }
 
 h2 {
   font-size: 5rem;
 }
+.form-wrapper {
+  flex: 3 1 40rem;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  padding: 5rem;
+  margin: 4rem 6rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 3rem 0.2rem;
+}
+
 .contact {
   min-height: 90vh;
-  display: flex;
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
@@ -25,12 +33,9 @@ h2 {
   align-items: center;
 }
 
-.form-wrapper {
-  flex: 3 1 40rem;
-}
 .form-wrapper span {
   font-size: 4rem;
-  color: rgb(168, 4, 4);
+  color: rgb(197, 29, 127);
 }
 .form-wrapper label {
   display: block;
@@ -39,8 +44,10 @@ h2 {
   display: block;
   margin: 3rem 0rem;
   width: 100%;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  color: rgb(253, 253, 253);
   border: none;
   border-radius: 1rem;
   padding: 1rem;
@@ -55,7 +62,8 @@ select:focus {
 .form-wrapper .button {
   padding: 1rem;
   width: 100%;
-  background: rgb(151, 15, 15);
+  font-size: 2rem;
+  background: #3f5efb;
   color: white;
   border: none;
   border-radius: 1rem;
@@ -63,7 +71,7 @@ select:focus {
 }
 
 .form-wrapper h2 {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .message {
   display: block;
@@ -71,5 +79,10 @@ select:focus {
   padding: 0.3rem;
   box-shadow: black;
   color: white;
+  border: none;
+}
+.swal-button {
+  border-radius: 0.5rem;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
   border: none;
 }

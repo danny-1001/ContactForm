@@ -20,3 +20,29 @@
     <div id="root"></div>
   </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  $("#submit").click(function () {
+    var name = $("#name").val();
+    var email = $("#email").val();
+
+    if (name == "" || email == "") {
+      swal({
+        title: "Field are Empty",
+        text: "Please submit your name and email",
+        icon: "error",
+        button: "OK",
+      });
+    } else {
+      swal({
+        title: "Thank you!",
+        text: "Succesfully submitted",
+        icon: "success",
+        button: "OK",
+      });
+    }
+  });
+</script>
